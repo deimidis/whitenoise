@@ -1,0 +1,1 @@
+define(["jquery","jquery.jplayer"],function(e,t){e("#jquery_jplayer_1").jPlayer({ready:function(){e(this).jPlayer("setMedia",{oga:"http://72.32.58.75:8001/thefly.mp3"})},supplied:"mp3"})})
