@@ -10,6 +10,8 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
   </head>
   <body>
     <!-- Use this installation button to install locally without going
@@ -17,13 +19,40 @@
     <button id="install-btn">Install</button>    
 
     <!-- Write your application here -->
+  <div class="container-narrow">
     <section class="row-fluid">
-      <h1>Ruido Blanco, una aplicación a pedido</h1>
+      <h1>Ruido Blanco</h1>
     </section>
-    <audio controls>
+    <div class="row-fluid">
+      <section class="texto">
+        <p class="hidden-phone">
+            El televisor sin señal o la radio cuando no captaba ninguna frecuencia solía ser una mala noticia cuando éramos chicos. Nunca llegábamos a escuchar el tiempo suficiente para darnos cuenta que es un relajante. Si tan solo hubiéramos aguantado un poco más de tiempo la angustia de no obtener lo que queríamos, hubiéramos descansado mejor en nuestra vida.
+        </p>
+        <p>
+            Esta simple aplicación te permitirá escuchar el ruido blanco y dejarte descansar después de horas de trabajo frente a la PC. Unos auriculares y unos minutos de escucha serán suficientes para recargar energías.
+        </p>
+      </section>
+      <section class="">
+        <button class="btn btn-large" data-sound="marron" data-status="off">Ruido marrón</button>
+        <button class="btn btn-large" data-sound="rosa" data-status="off">Ruido rosa</button>
+        <button class="btn btn-large" data-sound="blanco" data-status="off">Ruido blanco</button>
+      </section>
+    </div>
+  </div>
+    <!-- Estos son los archivos de audio para que puedan ser reproducidos en los navegadores modernos -->
+    <audio id="marron">
       <source src="http://archive.org/download/TenMinutesOfWhiteNoisePinkNoiseAndBrownianNoise/BrownianNoise.ogg" type="audio/ogg">
         <source src="http://archive.org/download/TenMinutesOfWhiteNoisePinkNoiseAndBrownianNoise/BrownianNoise_64kb.mp3" type="audio/mp3">
     </audio>
+    <audio id="rosa">
+      <source src="http://archive.org/download/TenMinutesOfWhiteNoisePinkNoiseAndBrownianNoise/PinkNoise.ogg" type="audio/ogg">
+        <source src="http://archive.org/download/TenMinutesOfWhiteNoisePinkNoiseAndBrownianNoise/PinkNoise_64kb.mp3" type="audio/mp3">
+    </audio>
+    <audio id="blanco">
+      <source src="http://archive.org/download/TenMinutesOfWhiteNoisePinkNoiseAndBrownianNoise/WhiteNoise.ogg" type="audio/ogg">
+        <source src="http://archive.org/download/TenMinutesOfWhiteNoisePinkNoiseAndBrownianNoise/WhiteNoise_64kb.mp3" type="audio/mp3">
+    </audio>
+    <!-- Acá terminaron los archivos de audio -->
     <!-- Using require.js, a module system for javascript, include the
          js files. This loads "main.js", which in turn can load other
          files, all handled by require.js:
@@ -31,6 +60,7 @@
     <script type="text/javascript"
             data-main="js/init.js"
             src="js/lib/require.js">
+            
         </script>
   </body>
 </html>

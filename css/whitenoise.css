@@ -8,3 +8,71 @@ section {
 	width: 80%;
 	margin: auto;
 }
+.btn:hover, .btn:active {
+	background: #a90329; 
+	background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); 
+	background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); 
+	background: -o-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); 
+	background: -ms-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); 	
+	background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); 
+	color: #fff;
+	text-shadow: none;
+}
+.btn{
+	color: #fff;
+	text-shadow: none;
+	background: #cc0000; 
+background: -moz-linear-gradient(top, #cc0000 0%, #cc0000 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cc0000), color-stop(100%,#cc0000)); 
+background: -webkit-linear-gradient(top, #cc0000 0%,#cc0000 100%); 
+background: -o-linear-gradient(top, #cc0000 0%,#cc0000 100%); 
+background: -ms-linear-gradient(top, #cc0000 0%,#cc0000 100%); 
+background: linear-gradient(to bottom, #cc0000 0%,#cc0000 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#cc0000',GradientType=0 ); 
+}
+.btn.active {
+	background: #a90329; 
+	background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); 
+	background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); 
+	background: -o-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); 
+	background: -ms-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); 	
+	background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); 
+	color: #fff;
+	text-shadow: none;
+}
+.container-narrow {
+	max-width: 95%;
+	margin: auto;
+	text-align: center;
+}
+.container-narrow p {
+	text-align: left;
+}
+h1 {
+	font-family: 'BenchNine', sans-serif;
+}
+.texto {
+	width: 60%;
+	margin: 25px auto;
+	font-family: 'Noticia Text', serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+@media (max-width: 480px) { 
+	.texto {
+		font-size: 0.8em;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		margin: 10px auto;
+		width: 100%;
+	}
+	.btn {
+		margin-bottom: 10px;
+	}
+	h1 {
+		margin-bottom: 0;
+	}
+}
